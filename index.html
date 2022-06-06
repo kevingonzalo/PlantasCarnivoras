@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas Carnivoras</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- fuentes de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1bf62eeaf6.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="body" onmousedown="return false" onselectstart="return false">
+    <!-- encabezado de la web  -->
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="index.html"><img src="img/logo.png" alt="Logo de Plantas Carnivoras" class="logo"></a>
+            <ul class="lista">
+                <li class="elemento-lista"><a href="">inicio</a></li>
+                <li class="elemento-lista"><a href="">Productos</a></li>
+                <li class="elemento-lista"><a href="#contacto">Contacto</a></li>
+                <a href="#"><i class="fa-solid fa-bars" id="btn-right"></i></a>
+                <div class="iniciar-sesion">
+                    <a href="#">INICIAR SESION</a>
+                    <a href="#">Registrarse</a> 
+                </div>
+            </ul> 
+        </nav>
+        <!-- pestaña de los productos agregados al carrito -->
+        <a><i class="fa-solid fa-cart-shopping" id="carrito"></i></i></a><span id="contador" class="numero-carro"></span>
+        <div id="carrito-cerrado">
+            <div id="objetos" class="objetos">
+                <a><i id="cerrar" class="fa-solid fa-xmark"></i></a>
+                <div class="cantidades" title="Cantidad de Productos Agregados">
+                </div>
+                <div id="compras">  
+                </div>
+            </div>
+        </div>
+    </header>  
+    <!-- contenedor de la pagina -->
+    <div class="container">
+        <main class="encabezado">
+            <img src="img/img-encabezado.jpg" alt="imagen de encabezado">
+            <div class="texto-encabezado">
+                <h1><strong>Plantas Carnivoras!</strong></h1>
+                <div class="boton">
+                    <a class="btn" href="#contacto">Pedi la Tuya!</a>
+                </div> 
+            </div>
+        </main>
+    <!-- seccion de productos -->
+    <section class="section1">
+        <h1 class="titulo">Productos</h1>
+        <div id="contenido" class="tienda">  
+            <!-- aca irian los productos a vender traidos desde JS  -->
+        </div>
+    </section>
+    <!-- contactos y mensaje directo -->
+    <section class="contacto">
+        <h1 class="titulo">Consultas</h1>
+        <div class="formulario">
+            <input type="text" name="nombre" placeholder="Nombre" id="input-nombre">
+            <input type="tel" name="numero" placeholder="Tel/Cel" id="input-nombre">
+            <input type="email" name="email" placeholder="Email" id="input-email">
+            <textarea name="comentario" id="comentario" placeholder="Escribí tu consulta" cols="20" rows="10"></textarea>
+            <button id="btn-enviar">Enviar</button>
+        </div>
+    </section>
+    <!-- pie de pagina -->
+    <footer class="footer">
+        <p><a href="">kevin derechos</a></p>
+    </footer>
+    </div>
+    <!-- enlaces a javascript -->
+    <!-- encale a animacion y diseño de sweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="javascript/scroll.js"></script>
+    <script src="javascript/Planta.js"></script>
+    <script src="javascript/carrito.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
